@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open HTML2 and WebGL</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 20;
+        }
+        h1 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: 20px;
+        }
+        h1 img {
+            width: 25%;
+            height: auto;
+            padding-left: 30px;
+
+        }
+        h2 {
+            padding-left: 10px;
+        }
+        img {
+            width: 500px;
+            height: auto;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .images {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1000px;
+        }
+        .title {
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> <img src="Wriver logo.png" > </h1>
+    
+
+    <!-- Images to open HTML2 with the entered name -->
+    <div class="images">
+        <div>
+            <img src="Arcus-Sofa-01-840x560.jpg" alt="Sofa" onclick="PlumSofa()" style="margin-right: 30px;">
+            <div class="title">Arcus Sofa<br>FIUM COLLECTION</div>
+        </div>
+        <div>
+            <img src="Cleave-300-Side-Table-03.jpg" alt="Table" onclick="Table()">
+            <div class="title">Cleave 300 Side Table<br>FLEXUS COLLECTION</div>
+        </div>
+    </div>
+
+    <!-- JavaScript to open HTML2 with the entered name -->
+    <script>
+        function PlumSofa() {
+            window.open('PlumSofa.html');
+        }
+        function Table() {
+            window.open('Table - Copy.html');
+        }
+    </script>
+
+</body>
+</html>
